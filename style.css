@@ -1,0 +1,298 @@
+body{
+    margin:0;
+    padding: 0;
+    font-size: 16px;
+}
+.head{
+    height:10rem;
+    width:100%;
+    
+}
+.head1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1rem;
+    overflow: hidden; /* Prevents overflow from scaling */
+    height:4rem
+}
+.logo{
+    display: flex;
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+.logo img{
+    width:2rem;
+}
+
+.serach-icon{
+    display: flex;
+    border-radius: 5px;
+   
+    
+}
+.serach-icon img{
+    border:1px solid black;
+    border-right: 0px;
+    padding-left: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.serach-icon input{    
+    border: 1px solid black;
+    border-left: 0px;
+    width:35rem;
+    height:2.5rem;
+    padding-left: 15px;
+    font-size: 1.2rem;
+    color: rgb(5, 5, 5);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    outline: none;
+}
+.coust{
+    width:30px;
+    height:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid green;
+    background-color: green;
+    border-radius: 100%;
+    font-size: 1.2rem;
+    color: white;
+    position: absolute; /* Ensure the layout doesn’t shift */
+    transition: transform 1s ease-out; /* Smooth transition */
+}
+.coust-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Ensure the wrapper positions children correctly */
+}
+
+.coust:hover{
+    border: 3px solid red;
+    transform: scale(0.80);
+}
+
+.head2{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1.2rem;
+    height:2rem;
+    padding-left: 2.3rem;
+    color: rgb(61 61 61);
+    opacity: 1;
+}
+
+
+
+.body{
+    background-color: rgb(245, 247, 248);
+    width: 100%;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+    box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+   
+}
+.about-us{
+    font-size: 2.0rem;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    padding-bottom: 4rem;
+}
+.info{
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 2rem;
+    
+}
+.ceo-img{
+    margin-left: 80px;
+  margin-right: 80px;
+  display: block; /* Ensures the image is treated as a block element */
+    max-width: calc(100% - 160px); /* Ensures the image fits within the padding */
+}
+.ceo-img img {
+    width: 100%;
+    height: auto; /* Ensures the image maintains its aspect ratio */
+    display: block;
+}
+
+.inspect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sprader{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 80px; /* Add 80px padding to left and right */
+    flex: 1;
+    
+}
+.book, .pic {
+    flex: 1; /* Allow both elements to grow equally */
+    margin: 0 10px; /* Add spacing between the elements if needed */
+}
+
+.pic {
+    display: block;
+    margin-left: 80px;
+    margin-right: 80px;
+    max-width: calc(100% - 160px);
+}
+
+.pic img{
+    width: 100%;
+    height: auto; /* Ensures the image maintains its aspect ratio */
+    display: block;
+
+}
+.text20{
+    padding: 0px 80px;
+}
+.text10{
+    font-size: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    font-weight: 700;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:30px;
+    align-items: stretch;
+    padding-top: 3rem;
+}
+
+.grid1{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap:20px;
+    flex-direction: row;
+    
+}
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    padding-top: 2rem;
+}
+.text33 h3 {
+    margin-bottom: 10px; /* Adjust the space between the title and text */
+}
+.text34 {
+    margin-right: 95px;
+}
+
+@media screen and (max-width:650px) and (min-width:600px) {
+    .logo span{
+        display: none;
+        
+    }
+    .logo{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .serach-icon{
+        width:300px;
+    }
+    .head2{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .head{
+        height:250px
+    }
+    .body{
+        display: flex;
+        align-items: flex-start;
+        padding-left: 40px;
+    }
+  
+    .info{
+        display: flex;
+        align-items: flex-start;
+        padding-left: 0px;
+
+    }
+    .ceo-img {
+        margin: 0; /* Remove margins to ensure it aligns correctly */
+        padding: 0; /* Remove padding if not needed */
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .ceo-img img {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+        display: block;
+        margin: 0; /* Remove margin if present */
+    }
+    .inspect{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-left: 40px;
+    }
+    .pic{
+        display: none;
+    }
+    .sprader {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0;
+        margin: 0;
+        width: 100%; /* Ensure it uses full width of its container */
+    }
+    .book {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0;
+        margin-right: 0100px;
+        width: 100%; /* Ensure it uses full width of its container */
+      
+    }
+    .text20{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-right: 50px;
+    }
+
+}
+
+@media screen and (max-width:599px){
+    *{
+        display: none;
+    }
+}
+
+
